@@ -1,0 +1,13 @@
+#! /bin/bash
+read -p "Enter a number to generate .txt file "  number
+for (( i=1 ; i<=$number; i++ ))
+do
+    	nano file$i.txt
+    	echo "Inside File$i" >> file$i.txt
+
+done
+
+for (( j=1; j<=$number; j++))
+do
+    	cat file$j.txt
+done
