@@ -1,0 +1,10 @@
+#! /bin/bash
+
+read -p "Enter the number to find out even or odd "  num
+
+if (( $num%2 == 0 ))
+then
+   	echo " $num is Even "
+else
+ 	echo "$num is odd"
+fi
