@@ -1,0 +1,13 @@
+#! /bin/bash
+
+read -p "Enter a number upto which you want to print numbers " num
+sum=0
+echo "The sum of first $num natural numbers are: "
+for (( i=1 ; i<=$num ; i++ ))
+do
+    	printf "$i "
+    	sum=`expr $sum + $i`
+done
+
+echo ""
+echo "The sum of $num natural numbers is:  $sum"
