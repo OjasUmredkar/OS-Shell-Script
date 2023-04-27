@@ -1,0 +1,11 @@
+#! /bin/bash
+
+
+read -p "Enter a number upto which you want to display cubes: " num
+
+for (( i=1 ; i<=num ; i++ ))
+do
+    	cube=`expr $i \* $i \* $i`
+    	echo "Number is: $i and cube of the $i is :$cube"
+done
+
