@@ -1,0 +1,29 @@
+#Q 21.  Write a Shell Script to display the sum of the series [ 9 + 99 + 999 + 9999 ...]. 
+#Test Data :
+#Input the number or terms :5
+#Expected Output :
+#9 99 999 9999 99999
+#The sum of the saries = 111105
+
+
+#! /bin/bash
+
+read -p "Enter the number of terms you want to print: " n
+term=0
+j=1
+t=0
+sum=0
+for (( i=1 ; i<=n ; i++ ))
+do 	 
+
+
+
+    	t=`expr $j \* 9`
+    	term=`expr $term + $t`
+    	j=`expr $j \* 10`
+    	printf "%d " $term
+    	sum=`expr $term + $sum`
+done
+
+printf "\nThe sum of the series is : %d \n" $sum   	 
+
